@@ -357,6 +357,43 @@ function getDigitalRoot(num) {
  *   '{[(<{[]}>)]}' = true
  */
 function isBracketsBalanced(/* str */) {
+  // let matchingOpeningBracket;
+  // let ch;
+  // const stack = [];
+  // const bracketsConfig = [['[', ']'], ['(', ')'], ['{', '}'], ['<', ']']];
+  // const bracketsConfigArray = [].concat(...bracketsConfig);
+  // const openingBrackets = [];
+  // const closingBrackets = [];
+  // if (str.length <= 1) {
+  //   return false;
+  // }
+  // for (let i = 0; i < bracketsConfigArray.length; i += 1 ) {
+  //   if (i % 2 === 0) {
+  //     openingBrackets.push(bracketsConfigArray[i]);
+  //   } else {
+  //     closingBrackets.push(bracketsConfigArray[i]);
+  //   }
+  // }
+  // for (let i = 0; i < str.length; i += 1) {
+  //   ch = str[i];
+  //   if (closingBrackets.indexOf(ch) > -1) {
+  //     matchingOpeningBracket = openingBrackets[closingBrackets.indexOf(ch)];
+  //     if ((openingBrackets[closingBrackets.indexOf(ch)]
+  //     === closingBrackets[closingBrackets.indexOf(ch)])
+  //     && (stack[stack.length - 1] !== matchingOpeningBracket) && (stack.indexOf(ch) === -1))
+  //     { stack.push(ch); }
+  //     else {
+  //           !== closingBrackets[closingBrackets.indexOf(ch)]) {
+  //         return false;
+  //       }
+  //       break;
+  //     }
+  //   }
+  //   else {
+  //     stack.push(ch);
+  //   }
+  // }
+  // return (stack.length === 0);
   throw new Error('Not implemented');
 }
 
@@ -381,8 +418,8 @@ function isBracketsBalanced(/* str */) {
  *    365, 4  => '11231'
  *    365, 10 => '365'
  */
-function toNaryString(/* num, n */) {
-  throw new Error('Not implemented');
+function toNaryString(num, n) {
+  return num.toString(n);
 }
 
 
