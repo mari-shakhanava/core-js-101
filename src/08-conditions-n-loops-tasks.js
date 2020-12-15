@@ -27,8 +27,16 @@
  *  21 => 'Fizz'
  *
  */
-function getFizzBuzz(/* num */) {
-  throw new Error('Not implemented');
+function getFizzBuzz(num) {
+  // const newArr = Array.from({ length: num }, (a, b) => b + 1);
+  // for (let i = 0; i <= num; i += 1) {
+  if (num % 3 === 0 && num % 5 !== 0) {
+    return 'Fizz';
+  } if (num % 5 === 0 && num % 3 !== 0) {
+    return 'Buzz';
+  } if (num % 5 === 0 && num % 3 === 0) {
+    return 'FizzBuzz';
+  } return num;
 }
 
 
