@@ -274,7 +274,7 @@ function isString(value) {
  *   'Q♠' => 50
  *   'K♠' => 51
  */
-function getCardId(/* value */) {
+function getCardId(value) {
   // const suits = ['♣', '♦', '♥', '♠'];
   // const values = ['A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K'];
   // const valueArr = value.split('');
@@ -289,7 +289,13 @@ function getCardId(/* value */) {
   // const indexCounterCorrector = 13 - values.indexOf(valueArr[0]);
   // const cardId = indexCounter - indexCounterCorrector - 1 ;
   // return cardId;
-  throw new Error('Not implemented');
+  const arr = [
+    'A♣', '2♣', '3♣', '4♣', '5♣', '6♣', '7♣', '8♣', '9♣', '10♣', 'J♣', 'Q♣', 'K♣',
+    'A♦', '2♦', '3♦', '4♦', '5♦', '6♦', '7♦', '8♦', '9♦', '10♦', 'J♦', 'Q♦', 'K♦',
+    'A♥', '2♥', '3♥', '4♥', '5♥', '6♥', '7♥', '8♥', '9♥', '10♥', 'J♥', 'Q♥', 'K♥',
+    'A♠', '2♠', '3♠', '4♠', '5♠', '6♠', '7♠', '8♠', '9♠', '10♠', 'J♠', 'Q♠', 'K♠',
+  ];
+  return arr.findIndex((el) => el === value);
 }
 
 
