@@ -275,20 +275,6 @@ function isString(value) {
  *   'K♠' => 51
  */
 function getCardId(value) {
-  // const suits = ['♣', '♦', '♥', '♠'];
-  // const values = ['A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K'];
-  // const valueArr = value.split('');
-  // let indexCounter = 0;
-  // for (let i = 0; i < suits.length; i += 1) {
-  //   if (valueArr[1].charCodeAt(0) !== suits[i].charCodeAt(0)) {
-  //     indexCounter += 13;
-  //   } else {
-  //     indexCounter = 13;
-  //   }
-  // }
-  // const indexCounterCorrector = 13 - values.indexOf(valueArr[0]);
-  // const cardId = indexCounter - indexCounterCorrector - 1 ;
-  // return cardId;
   const arr = [
     'A♣', '2♣', '3♣', '4♣', '5♣', '6♣', '7♣', '8♣', '9♣', '10♣', 'J♣', 'Q♣', 'K♣',
     'A♦', '2♦', '3♦', '4♦', '5♦', '6♦', '7♦', '8♦', '9♦', '10♦', 'J♦', 'Q♦', 'K♦',
